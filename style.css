@@ -62,13 +62,15 @@ h2 {
     width: 100vw;
   }
 
-  .panel:nth-last-of-type(4),
+  .panel:nth-last-of-type(2),
   :nth-last-of-type(5) {
     display: none;
   }
 
   .panel h3 {
     font-size: 12px;
+    bottom: 35px;
+    left: 10px;
   }
 
   h2 {
