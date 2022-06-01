@@ -24,30 +24,32 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 80vh;
-  border-radius: 50px;
-  color: white;
+  border-radius: 15px;
   cursor: pointer;
   flex: 0.5;
   margin: 10px;
   position: relative;
-  transition: flex 0.7 ease-in;
+  transition: flex 0.7s ease-in;
 }
 
 .panel h3 {
+  color: wheat;
+  text-shadow: 0 2px 0.5px rgb(60, 4, 111), 1px 1px red;
   font-size: 24px;
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   left: 20px;
   margin: 0;
   opacity: 0;
 }
 
 .panel.active {
-  flex: 5;
+  flex: 1;
 }
 
 .panel.active h3 {
   opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
 }
 
 @media (max-width: 480px) {
@@ -58,5 +60,9 @@ body {
   .panel:nth-last-of-type(4),
   :nth-last-of-type(5) {
     display: none;
+  }
+
+  .panel h3 {
+    font-size: 12px;
   }
 }
