@@ -7,11 +7,16 @@
 body {
   font-family: 'Muli', sans-serif;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
   overflow: hidden;
   margin: 0;
+}
+
+h2 {
+  font-size: 24px;
 }
 
 .container {
@@ -64,5 +69,10 @@ body {
 
   .panel h3 {
     font-size: 12px;
+  }
+
+  h2 {
+    font-size: 16px;
+    align-items: center;
   }
 }
